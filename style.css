@@ -18,6 +18,9 @@
 
 
 /* MAIN */
+body{
+    background-color: lightgreen;
+}
 
 .movie-container{
     width: 70%;
@@ -28,15 +31,25 @@
 }
 
 .single-movie{
-    width: calc((100% / 3) - 5px);
-    margin: 10px;
+    width: calc((100% / 3) - 10px);
+    height: 600px;
+    overflow-y: scroll;
+    margin: 20px;
     text-align: center;
+    background-color: lightgray;
+    padding: 10px 10px;
+
 }
+
+.single-movie div:first-child {
+    padding: 10px;
+}
+
 
 .poster{
     width: 200px;
 }
 
 .title, .genre, .year, .description, .rating{
-    padding: 10px 10px;
+    padding: 20px 30px;
 }

@@ -125,7 +125,7 @@ $vPerVendetta->posterImg = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2
         <div class="single-movie">
             <div>TITOLO:</div>
             <h2 class="title"><?php echo $quartoPotere->title?></h2>
-            <img class="poster" src="<?php echo $quartoPotere->posterImg ?>" alt="">
+            <img class="poster" src="<?php echo $quartoPotere->posterImg ?>" alt="<?php $quartoPotere->title?>">
             <div class="genre"><?php echo $quartoPotere->genre?></div>
             <div class="year"><?php echo $quartoPotere->year?></div>
             <div class="description"><?php echo $quartoPotere->description?></div>
