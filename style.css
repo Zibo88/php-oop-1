@@ -1,0 +1,42 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+
+.flex{
+    display: flex;
+}
+
+.img{
+    width: 100%;
+    display: block;
+}
+
+
+/* MAIN */
+
+.movie-container{
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.single-movie{
+    width: calc((100% / 3) - 5px);
+    margin: 10px;
+    text-align: center;
+}
+
+.poster{
+    width: 200px;
+}
+
+.title, .genre, .year, .description, .rating{
+    padding: 10px 10px;
+}
