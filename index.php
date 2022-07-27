@@ -30,14 +30,18 @@ class Movie {
         $this->year = $_year;
     }
 
-   
+    public function ratingGenerate(){
+        return $this->ratig = rand(1,5);
+    }
 
 }
 
 // definisco le instanze
 $quartoPotere = new Movie('Quarto Potere', 'Drammatico', '1941');
 $quartoPotere->description = "La trama di Quarto potere (1941). Il magnate dell'informazione Charles Foster Kane pronuncia la parola 'Rosebud' immediatamente prima di morire, e un reporter va alla ricerca della soluzione dell'enigma nel suo passato...";
-var_dump($quartoPotere);
+// var_dump($quartoPotere);
+
+var_dump($quartoPotere->ratingGenerate());
 
 $ilPadrino = new Movie('Il Padrino', 'Drammatico', '1972');
 $ilPadrino->description = "La trama di Il padrino (1972). Don Vito Corleone è il boss di una famiglia mafiosa di New York, che si è sempre limitata ad alcune attività tra cui il gioco d'azzardo. Quando il gangster sostenuto da un'altra famiglia, i Sollozzo, annuncia di voler intraprendere lo spaccio di droga su tutta New York, Don Vito si oppone e sarà l'inizio di una lunga serie di vendette...";
